@@ -2,7 +2,9 @@
     "name" : "afuafuyo/html-filter-php",
     "description" : "A lib for filter html and attributes",
     "keywords" : [
-        "Xss"
+        "Xss",
+        "filter",
+        "html"
     ],
     "homepage" : "https://github.com/afuafuyo/html-filter-php",
     "type" : "library",
