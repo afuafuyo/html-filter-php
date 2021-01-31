@@ -1,0 +1,23 @@
+{
+    "name" : "afuafuyo/html-filter-php",
+    "description" : "A lib for filter html and attributes",
+    "keywords" : [
+        "Xss"
+    ],
+    "homepage" : "https://github.com/afuafuyo/html-filter-php",
+    "type" : "library",
+    "license" : "MIT",
+    "authors" : [{
+            "name" : "lipu yu",
+            "email" : "ylp1127@126.com",
+            "homepage" : "https://github.com/afuafuyo/html-filter-php",
+            "role" : "Founder and project lead"
+        }
+    ],
+    "require" : {
+        "php" : ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": { "Afu\\": "." }
+    }
+}

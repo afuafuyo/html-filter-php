@@ -1,2 +1,7 @@
 # html-filter-php
-filter html for php
+
+filter html and attributes for php
+
+```
+
+```
