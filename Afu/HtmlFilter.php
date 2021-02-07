@@ -56,6 +56,9 @@ class HtmlFilter {
      * ]
      */
     public $allowedTags = null;
+    
+    public $allowedComment = false;
+    
     public $htmlString = '';
 
     /**
@@ -65,7 +68,7 @@ class HtmlFilter {
      */
     private function isAllowedTag($nodeName) {
         if(null === $this->allowedTags) {
-            return true;
+            return false;
         }
 
         // white list
@@ -152,6 +155,10 @@ class HtmlFilter {
     }
 
     private function onComment($content) {
+        if(!$this->allowedComment) {
+            return;
+        }
+        
         $this->onText('<!--' . $content . '-->');
     }
 
