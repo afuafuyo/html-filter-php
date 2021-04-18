@@ -36,3 +36,7 @@ STR;
     <blockquote data-role="danger">这是第一段</blockquote>
 </div>
 ```
+
+# change log
+
+2021-04-18 fix pure text filter bug

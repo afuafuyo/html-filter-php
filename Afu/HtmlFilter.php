@@ -165,7 +165,8 @@ class HtmlFilter {
     public function filter($html) {
         $tagName = '';
 
-        $subString = $html;
+        // 添加一个临时节点 以便进行匹配
+        $subString = $html . '<htmlfilter />';
         while(1 === preg_match($this->REG_HTML, $subString, $parts, PREG_OFFSET_CAPTURE)) {
             if($parts[0][1] > 0) {
                 $this->onText( substr($subString, 0, $parts[0][1]) );
