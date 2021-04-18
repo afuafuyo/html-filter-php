@@ -57,7 +57,7 @@ class HtmlFilter {
      */
     public $allowedTags = null;
     
-    public $allowedComment = false;
+    public $allowComment = false;
     
     public $htmlString = '';
 
@@ -155,7 +155,7 @@ class HtmlFilter {
     }
 
     private function onComment($content) {
-        if(!$this->allowedComment) {
+        if(!$this->allowComment) {
             return;
         }
         
